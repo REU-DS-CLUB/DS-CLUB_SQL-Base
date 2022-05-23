@@ -80,19 +80,64 @@ REU Data Science Club - сообщество, созданное командо�
 уникальных идентификаторов сущностей (первичных ключей): 
 
 1)	Club_members. Сущность содержит информация об именах, фамилиях, датах рождения участиков клуба. Также в атрибуты входят id ментора, дата вступления в клуб, является ли сам участник ментором, id департамента. Первичный ключ – id (искусственный).
-
 <p float="left">
-  <img width="308" alt="image" src="https://user-images.githubusercontent.com/76436391/169881595-3191fddc-40aa-401e-a47b-8138ea62d8fc.png">  
-  <img width="302" alt="image" src="https://user-images.githubusercontent.com/76436391/169881615-6d346f47-fb99-4fdb-a450-c36eb14b81ee.png"> 
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169881595-3191fddc-40aa-401e-a47b-8138ea62d8fc.png">  
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169881615-6d346f47-fb99-4fdb-a450-c36eb14b81ee.png"> 
 </p>
 
 2)	Mentors. Сущность содержит информацию об имени ментора и его id. Первичный ключ – id (искусственный).
-
 <p float="left">
-  <img width="238" alt="image" src="https://user-images.githubusercontent.com/76436391/169883399-5868eec2-c164-43fb-9fd5-d5cc97909d63.png">  
-  <img width="400" alt="image" src="https://user-images.githubusercontent.com/76436391/169883459-01c2f97f-b966-4fe7-83f0-f64e73543fe5.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169883399-5868eec2-c164-43fb-9fd5-d5cc97909d63.png">  
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169883459-01c2f97f-b966-4fe7-83f0-f64e73543fe5.png">
 </p>
 
+3) Heads. Содержит информацию о дате вступления хэда в должность и о его заместителе. Первичный ключ – member_id (мигрировал из club_members).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169883699-7034fbd8-dc47-485f-bcea-152dc6f8c87a.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169883802-4bcfe224-b76a-42e2-8ea4-27aa82d2df7b.png">
+</p>
+
+4) Departments. Сущность содержит информацию о ФИО, дате рождения, стаже, зарплате сотрудника. Внешний ключ от сущности profession. Первичный ключ – id (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169884020-9dd8e29e-3a06-4071-b752-bb95a8b07e78.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169884044-0b600612-4927-42d5-bf4e-a8c808348d94.png">
+</p>
+
+5) SMM. Сущность содержит информацию о названии, уровне скидки, телефоне для связи компании. Внешний ключ от сущности direction. Первичный ключ – id company (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169884350-bb7bedb5-3f49-42fa-ba09-9a6401a60530.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169884370-c6773f38-6888-4b89-8bbb-0f0803d542cf.png">
+</p>
+
+6)	PR. Содержит информацию о стоимости заказа. Внешний ключ от сущности customer. Первичный ключ – id order (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169885818-020be4a8-e79a-4170-a9b0-511e65abe9f7.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169885837-fde20fc3-5107-4495-83d0-5d74a615f627.png">
+</p>
+
+7)	Knowledge_base. Содержит информацию о названии изделия. Внешние ключи от сущностей. type_of_product (тип изделия), size_of_product (размер изделия), design_of_product (дизайн изделия). Первичный ключ – id product (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169885944-ce0f48f8-9978-4c42-ba48-57d4aeefc371.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169885968-f300f0fa-e670-497c-b46b-b3ef37a305f7.png">
+</p>
+
+8)	Events. Содержит информацию о названии дизайна. Первичный ключ – id design (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886194-8f999056-877a-4755-9810-1ce243bda87f.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886224-21d344ef-ff8b-4c33-b135-f7375b7b47d3.png">
+</p>
+
+9)	Projects. Содержит информацию о возможных размерах изделий. Первичный ключ – size id (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886358-6d9197cf-971b-4f3d-9b4a-2c69a2a1da3d.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886384-97a8fe25-3fb9-43b7-aa15-56d0f95a1d0d.png">
+</p>
+
+10)	Rubrics. Содержит информацию о типах продукции. Первичный ключ – type id (искусственный).
+<p float="left">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886519-1434d9ff-edb9-4125-a18a-e02831389ba1.png">
+  <img width="200" alt="image" src="https://user-images.githubusercontent.com/76436391/169886542-78136b22-831d-4784-9f6b-5447cb7e1bb4.png">
+</p>
 
 Участники проекта:
 * Нина Попова
