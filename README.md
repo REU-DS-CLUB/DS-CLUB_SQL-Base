@@ -1,1 +1,2 @@
-# DS-CLUB_SQL-Base
+# DATA SCINCE CLUB SQL Database
+
