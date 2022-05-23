@@ -82,7 +82,15 @@ REU Data Science Club - сообщество, созданное командо�
 1)	Club_members. Сущность содержит информация об именах, фамилиях, датах рождения участиков клуба. Также в атрибуты входят id ментора, дата вступления в клуб, является ли сам участник ментором, id департамента. Первичный ключ – id (искусственный).
 
 <p float="left">
-<img width="308" alt="image" src="https://user-images.githubusercontent.com/76436391/169881595-3191fddc-40aa-401e-a47b-8138ea62d8fc.png">  <img width="302" alt="image" src="https://user-images.githubusercontent.com/76436391/169881615-6d346f47-fb99-4fdb-a450-c36eb14b81ee.png"> 
+  <img width="308" alt="image" src="https://user-images.githubusercontent.com/76436391/169881595-3191fddc-40aa-401e-a47b-8138ea62d8fc.png">  
+  <img width="302" alt="image" src="https://user-images.githubusercontent.com/76436391/169881615-6d346f47-fb99-4fdb-a450-c36eb14b81ee.png"> 
+</p>
+
+2)	Mentors. Сущность содержит информацию об имени ментора и его id. Первичный ключ – id (искусственный).
+
+<p float="left">
+  <img width="238" alt="image" src="https://user-images.githubusercontent.com/76436391/169883399-5868eec2-c164-43fb-9fd5-d5cc97909d63.png">  
+  <img width="400" alt="image" src="https://user-images.githubusercontent.com/76436391/169883459-01c2f97f-b966-4fe7-83f0-f64e73543fe5.png">
 </p>
 
 
