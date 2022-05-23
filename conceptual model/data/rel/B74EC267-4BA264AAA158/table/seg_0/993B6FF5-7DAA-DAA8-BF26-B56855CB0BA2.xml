@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="993B6FF5-7DAA-DAA8-BF26-B56855CB0BA2" name="SMM">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>6CF36BCE-9C5C-F84E-C970-E9D048B3E7B9</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6604BEB3-8974-2BF7-89D5-A6EF9CFBA5A3">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>81C0FB16-FFD1-45B8-5B85-12702DAF98A5</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="department_id" id="0A738B3B-4745-2461-7E13-EF14ED2DF3BD">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>09418FD5-46D5-133E-22B3-6BE3AFDBF9A8</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="media_channel" id="F7B47B79-FFDF-C18D-FA62-D905356E73EE">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>05B95F8D-2A0C-8C6A-36A5-F1518BD950D9</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="audience_count" id="45604A6A-ADE5-28BC-974E-3FB24923DA3C">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>A4C940E5-4D9F-7D5F-000C-12E7EA7BDF1C</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="org_count" id="679BE5DC-4298-3362-A8C5-4A5884294099">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>4EF5A103-DD9D-5EA2-B9EF-87869B4DC3B5</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departments_id" id="A5DCC361-CC73-AE3E-13DE-51A8DD328E19">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>A829F969-60CA-6CD8-7689-2D0602D23709</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DF3664E-0F67-3A2F-737E-8D37C0BCDDCC" referredColumn="F16A8EE9-05E7-09EF-9CAB-82BE1D3EF1AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B75321B9-A9F6-B5CC-28C3-B9F6164129AC" name="SMM_PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>1B40F7D4-EBD2-A591-284E-623D1DBBF544</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6604BEB3-8974-2BF7-89D5-A6EF9CFBA5A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08CE5CC9-F5C3-140F-6606-F9A8440D5612" name="SMM_Departments_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>79F0F95C-4F4A-67CC-A33C-429F01B704D7</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5DCC361-CC73-AE3E-13DE-51A8DD328E19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

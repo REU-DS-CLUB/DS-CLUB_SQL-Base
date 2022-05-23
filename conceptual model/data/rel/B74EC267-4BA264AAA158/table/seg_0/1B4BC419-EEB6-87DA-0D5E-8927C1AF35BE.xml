@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B4BC419-EEB6-87DA-0D5E-8927C1AF35BE" name="Heads">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>03462A17-E467-000A-647E-D9B8B4AF4A65</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="31EFBB79-DCA8-8FEB-9B7D-4CE482DEBDCB">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>0F2830D0-E0B4-7FA7-C464-35AF0C012ABF</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_id" id="E9CB5825-C605-4AA7-4E59-2D569E751845">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>8D3A6391-EDDF-019C-7A94-D50DDE4025F4</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_entry" id="34237CC4-EBB5-C7A8-3990-9A50EA8276FD">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>1AFFC4EB-326B-AF1A-F2B2-75EFD25EA09E</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deputy_member_id" id="0A8B143C-50D6-EFDD-17DA-2D0CEBF7836B">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:30:06 UTC</createdTime>
+<generatorID>EC49F1D8-9D12-9B95-7537-047866A48762</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="667AED75-D7A2-66D2-703F-6A6BB06C25A9" name="Heads_PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>142BAE5F-D34F-D476-FFBC-C5A1CEA27AB0</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9CB5825-C605-4AA7-4E59-2D569E751845"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

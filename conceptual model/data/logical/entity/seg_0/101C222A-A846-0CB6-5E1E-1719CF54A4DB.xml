@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="101C222A-A846-0CB6-5E1E-1719CF54A4DB" name="rubric">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:47:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="DFE781AF-F2D7-D74A-E54E-2C37851E8432">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:47:26 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="500218DE-95E0-447B-2E22-469F8A3AACCE">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:47:38 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_id" id="EA43E030-A16E-A4CF-CDB8-4102D47B89C5">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:47:56 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="media_channel_id" id="E53E1072-6348-36A9-4020-1044231882B6">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:49:41 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="4308600F-A0A8-6ED1-88BA-229D7CF95F99">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:50:35 UTC</createdTime>
+<generatorID>CE67D73C-F8DB-FB8B-FD9C-700BA5F19ADB</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<referedAttribute>81C0FB16-FFD1-45B8-5B85-12702DAF98A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2F27DBF9-3FA2-13E6-8B38-2B3EB45AB536" name="rubric PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:47:30 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DFE781AF-F2D7-D74A-E54E-2C37851E8432</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

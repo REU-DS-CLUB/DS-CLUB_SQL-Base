@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="data" id="3439813C-FF19-4173-DBAA-AE7779020DB0" version="3.5">
+<createdBy>Kostirin.V</createdBy>
+<createdTime>2022-05-06 16:55:49 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3439813C-FF19-4173-DBAA-AE7779020DB0</designId>
+</OSDM_Design>

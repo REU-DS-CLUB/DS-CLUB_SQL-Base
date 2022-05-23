@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="745B5834-2FB8-46DD-6F5D-F66B9B4C447D" name="Club_members">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>FBFD1483-D1DB-24CD-FDC2-AF1EED2C38FB</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E10EB324-5924-035B-EC37-800E7F1CDB49">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>512D3913-2EBD-B192-9416-52126A0858A2</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="26EF484A-4F5B-5938-D9BB-398153ED3503">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[ФИО]]></commentInRDBMS>
+<generatorID>EE95B629-100E-EAB0-1C55-7F5569DE8691</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="613756F3-134E-55E0-43A9-7626735DE29E">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>23D7B957-C95B-2079-98AC-87E166D9A689</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birthdate" id="724A8F1F-24D5-F35F-5B8D-00F9890337C7">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>80533CDA-553F-E0A8-6441-FF4162B1FDA5</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mentor_id" id="7F607353-35DA-EA36-B916-37428FDB0F8A">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>688396DC-F396-2F39-7B2A-EFACB78C0A35</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_entry" id="6D1745B6-2440-3492-C3AE-8FDC9D4AB548">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>6FED4610-B1AD-EA49-212F-3B78EB7D55C5</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_mentor" id="C52A48FE-37AD-7684-8378-589B2ED34B51">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>E3BDF535-6079-BD94-B131-E131EFDDE7BA</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="department_id" id="8A4AF4C7-C00B-67C3-0774-08CC002AF23E">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>2F6BF65E-A913-5384-DBCD-0075987F75CF</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mentors_id" id="BF6D5991-E180-69E3-4940-8C7967DE8C6C">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>5A6CFEC7-B16B-328B-36EE-632EC9D26076</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39B0DE79-AA9A-6A6D-2316-06677F9503B8" referredColumn="BB6C9439-76F8-74A1-4C13-1B92F814CDBF"/>
+</associations>
+</Column>
+<Column name="Heads_member_id" id="61314883-0C69-3B7C-E11D-725ABDD001D9">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:30:53 UTC</createdTime>
+<generatorID>F0179454-35E7-F8C8-C772-695642DDBD20</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE0095CC-D579-E083-56D0-78978A1058C8" referredColumn="E9CB5825-C605-4AA7-4E59-2D569E751845"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBC03829-2F47-B922-AF54-106651940DD8" name="Club_members_PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>441714F3-1A36-CB87-BA9D-813B0830BD17</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E10EB324-5924-035B-EC37-800E7F1CDB49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63F4DFF7-73AC-FF05-388B-EA0B5E138695" name="Club_members_Mentors_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>31233712-9A63-0DFA-9764-CE7E9BE33601</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF6D5991-E180-69E3-4940-8C7967DE8C6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55A4D2ED-24D7-1C37-DA5A-790CD5022E81" name="Club_members_Heads_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:30:53 UTC</createdTime>
+<generatorID>8C78666E-D4E3-7518-39AE-3684663E56E3</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61314883-0C69-3B7C-E11D-725ABDD001D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

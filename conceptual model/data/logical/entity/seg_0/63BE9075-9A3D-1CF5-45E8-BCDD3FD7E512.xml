@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="63BE9075-9A3D-1CF5-45E8-BCDD3FD7E512" name="Knowledge_base">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:36:33 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="4ED88EB0-987B-A55A-4182-58DAAC4F1FF8">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:52:21 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product" id="3029C41A-64FB-FC0F-6B5E-E9CFF4F7081B">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:51:30 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="281BBB3F-A500-A948-2FD4-C402EFD96EEA">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:02:54 UTC</createdTime>
+<generatorID>3894AF82-5DF4-D501-12BE-EF4B693FBAF0</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<referedAttribute>A7CCBA44-0EED-648D-4867-07388665B550</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="department_id" id="CB3A0AF7-8673-E9F4-FA49-6E492EFC350F">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:21:15 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A4CAC3EE-FA7B-3005-A952-9162166B84C6" name="Knowledge_base PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 17:53:32 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="B74EC267-B12D-B457-7FE8-4BA264AAA158" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4ED88EB0-987B-A55A-4182-58DAAC4F1FF8</attributeRef>
+<attributeRef>281BBB3F-A500-A948-2FD4-C402EFD96EEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

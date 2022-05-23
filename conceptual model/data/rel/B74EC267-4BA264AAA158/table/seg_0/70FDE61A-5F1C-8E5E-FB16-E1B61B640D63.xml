@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70FDE61A-5F1C-8E5E-FB16-E1B61B640D63" name="department_members">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<ordsAlias>relation_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Departments_id" id="F510C8F3-D3C8-D22E-7A65-5F9914F5456E">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD2B8A28-F44A-93C5-3217-C642058C5A29" referredColumn="F16A8EE9-05E7-09EF-9CAB-82BE1D3EF1AC"/>
+</associations>
+</Column>
+<Column name="Club_members_id" id="DC615FF1-91E3-1F4D-4C68-CF7100461843">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C44977F-33D6-4FB1-E0B1-40A46B569139" referredColumn="E10EB324-5924-035B-EC37-800E7F1CDB49"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23ECC9F3-5B06-E209-F867-9EF9929F7E85" name="Relation_10_PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F510C8F3-D3C8-D22E-7A65-5F9914F5456E"/>
+<colUsage columnID="DC615FF1-91E3-1F4D-4C68-CF7100461843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78518C6C-D41B-F8EF-6822-10F121F51461" name="Relation_10_Departments_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>456562E2-549E-15E2-33C3-F24BA3D18CDC</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F510C8F3-D3C8-D22E-7A65-5F9914F5456E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="856DF831-DE1B-A6FF-6A39-565CED6D99A2" name="Relation_10_Club_members_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>456562E2-549E-15E2-33C3-F24BA3D18CDC</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC615FF1-91E3-1F4D-4C68-CF7100461843"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

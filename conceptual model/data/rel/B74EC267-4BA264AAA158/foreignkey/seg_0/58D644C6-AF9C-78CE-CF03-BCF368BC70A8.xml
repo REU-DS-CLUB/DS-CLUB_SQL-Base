@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58D644C6-AF9C-78CE-CF03-BCF368BC70A8" containerWithKeyObject="F07EBD56-EB16-3466-2857-A022AFD274F4" localFKIndex="62547A4B-3016-0B88-27A0-51EE46EFB6D7" name="rubric_SMM_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>CE67D73C-F8DB-FB8B-FD9C-700BA5F19ADB</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<referredTableLongName>SMM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>993B6FF5-7DAA-DAA8-BF26-B56855CB0BA2</referredTableID>
+<keyObject>B75321B9-A9F6-B5CC-28C3-B9F6164129AC</keyObject>
+<referredKeyID>B75321B9-A9F6-B5CC-28C3-B9F6164129AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

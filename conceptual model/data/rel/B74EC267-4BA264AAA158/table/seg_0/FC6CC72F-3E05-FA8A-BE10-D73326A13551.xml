@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC6CC72F-3E05-FA8A-BE10-D73326A13551" name="Knowledge_base">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>63BE9075-9A3D-1CF5-45E8-BCDD3FD7E512</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0BC93037-3389-4A2E-B82E-F63271B38DA2">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>4ED88EB0-987B-A55A-4182-58DAAC4F1FF8</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product" id="2FAA8F76-2C8C-34DE-2323-53EC8FB5E3C5">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>3029C41A-64FB-FC0F-6B5E-E9CFF4F7081B</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departments_id" id="E0E87130-6A0B-7435-BA28-A87B33699A6F">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>281BBB3F-A500-A948-2FD4-C402EFD96EEA</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2755ECEB-3D35-069F-2757-AAAADF1D910F" referredColumn="F16A8EE9-05E7-09EF-9CAB-82BE1D3EF1AC"/>
+</associations>
+</Column>
+<Column name="department_id" id="E0E565DB-8704-D7F0-7D80-65116929FD6A">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>CB3A0AF7-8673-E9F4-FA49-6E492EFC350F</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B45CFCB9-C425-D14F-3E70-2040DB41278F" name="Knowledge_base_PK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>A4CAC3EE-FA7B-3005-A952-9162166B84C6</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BC93037-3389-4A2E-B82E-F63271B38DA2"/>
+<colUsage columnID="E0E87130-6A0B-7435-BA28-A87B33699A6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49AF67D4-0612-9588-9F54-66F720C54878" name="Knowledge_base_Departments_FK">
+<createdBy>Nina</createdBy>
+<createdTime>2022-05-08 18:25:07 UTC</createdTime>
+<generatorID>3894AF82-5DF4-D501-12BE-EF4B693FBAF0</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0E87130-6A0B-7435-BA28-A87B33699A6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
