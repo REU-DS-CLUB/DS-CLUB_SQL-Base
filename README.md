@@ -187,6 +187,7 @@ brew install the nodeJS
 
 В строке Password  используем пароль, который использовали ранее для поднятия контейнера в Docker: 
 **reallyStrongPwd123**
+
 <img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169992460-b93d852c-4187-483c-8061-f9d1b2759d6c.png">
 
 Чтобы запустить скрипт нажимаем левой кнопкой мыши на localhost и выбираем New Query. В новом окошке вставляем скрипт, который хотим запустить и нажимаем на Run
