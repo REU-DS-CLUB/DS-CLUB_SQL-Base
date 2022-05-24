@@ -1,0 +1,163 @@
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (1, 'Петр','Сокерин', '1999.07.07', 1, '2020.07.07', True, 2, 1, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (2, 'Нина','Попова', '1999.07.07', 1, '2020.07.07', False, 1, 1, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (3, 'Диана','Исаева', '1999.07.07', 4, '2020.07.07', False, 1, 4, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (4, 'Юлия','Силова', '1999.07.07', 4, '2020.07.07', True, 2, 4, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (5, 'София','Николенко', '1999.07.07', 4, '2020.07.07', True, 1, 5, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (6, 'Анастасия', 'Максимова', '1999.07.07', 6, '2020.07.07', True, 1, 6, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (7, 'Виктория', 'Дереза', '1999.07.07', 7, '2020.07.07', True, 1, 7, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (8, 'Владимир', 'Агишев', '1999.07.07', 1, '2020.07.07', False, 3, 1, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (9, 'Артем', 'Малый', '1999.07.07', 4, '2020.07.07', False, 1, 4, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (10, 'Артем', 'Мичурин', '1999.07.07', NULL, '2020.07.07', False, 3, N, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (11, 'Максим', 'Стрельцов', '1999.07.07', 5, '2020.07.07', False, 3, 5, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (12, 'Виктор', 'Костырин', '1999.07.07', 6, '2020.07.07', False, 3, 6, 2);
+
+INSERT INTO Club_members (id,name,surname,birthdate,mentor_id,date_of_entry,is_mentor,department_id,Mentors_id,Heads_member_id)
+VALUES (13, ‘Лера’, ‘Авакян, '1999.07.07', NULL, '2020.07.07', False, 2, NULL, 2);
+
+
+INSERT INTO Mentors (member_id, mentor_name)
+SELECT  id, name
+FROM    Club_members WHERE is_mentor = True
+
+
+
+INSERT INTO Heads (member_id,id,date_of_entry, deputy_member_id_id)
+VALUES (2,1,'2020.07.07',3);
+
+
+
+
+INSERT INTO Departments (id, name, head_id)
+VALUES (1, 'SMM', 'Диана Исаева');
+
+INSERT INTO Departments (id, name, head_id)
+VALUES (2, 'PR', 'Нина Попова');
+
+INSERT INTO Departments (id, name, head_id)
+VALUES (3, 'База знаний', 'Артем Мичурин');
+
+
+
+INSERT INTO Events (id, department_id,speaker_phone,speaker_link,theme,format,speaker_name, audience_count, Departments_id)
+VALUES (1, 1, NULL, NULL, 'McKinsey', 'Offline', NULL, NULL, 1);
+
+INSERT INTO Events (id, department_id,speaker_phone,speaker_link,theme,format,speaker_name, audience_count, Departments_id)
+VALUES (2, 1, NULL, NULL, 'Стажировка. Инструкция по пременению', 'Online', 'Лера Авакян', NULL, 1);
+
+INSERT INTO Events (id, department_id,speaker_phone,speaker_link,theme,format,speaker_name, audience_count, Departments_id)
+VALUES (3, 1, NULL, NULL, 'Вышмат для анализа данных', 'Offline', 'Мурад Исмаилов', NULL, 1);
+
+
+
+INSERT INTO Knowledge_base(id, department_id, product, Departments_id)
+VALUES (1, 3, 'Notion', 3);
+
+INSERT INTO Knowledge_base(id, department_id, product, Departments_id)
+VALUES (2, 3, 'YouTube', 3);
+
+INSERT INTO Knowledge_base(id, department_id, product, Departments_id)
+VALUES (3, 3, 'Github', 3);
+
+
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (1, 2, NULL, 'HSE Career', 'Внешние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (2, 2, NULL, 'Карьерный центр | НИЯУ МИФИ ', 'Внешние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (3, 2, NULL, 'Карьерный клуб МГТУ им. Н.Э.Баумана', 'Внешние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (4, 2, NULL, 'DATApedia | Data Science', 'Внешние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (5, 2, NULL, 'Data Science и все такое', 'Внешние партнеры', 2);
+
+
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (6, 2, NULL, 'СНО', 'Внутренние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (7, 2, NULL, 'Fairway', 'Внутренние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (8, 2, NULL, 'ЦВСК', 'Внутренние партнеры', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (9, 2, NULL, 'Case-club', 'Внутренние партнеры', 2);
+
+
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (10, 2, NULL, 'Улан-Баторский филиал', 'Филиалы РЭУ', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (11, 2, NULL, 'Абитуриент Минского филиала РЭУ им.Г.В.Плеханова', 'Филиалы РЭУ', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (12, 2, NULL, 'Севастопольский филиал РЭУ им. Г.В. Плеханова', 'Филиалы РЭУ', 2);
+
+INSERT INTO PR(id_partner, department_id, product,partner_name,partner_category,Departments_id)
+VALUES (13, 2, NULL, 'Волгоградский филиал', 'Филиалы РЭУ', 2);
+
+
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (1, 3, 'Сентимент-анализ', 1,  3, 3);
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (2, 3, 'Дашборд', 6,  9, 3);
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (3, 3, 'UTM-теги', 5,  11, 3);
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (4, 3, 'Сайт клуба', 7,  8, 3);
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (5, 3, 'Рекомендательная система по портелям', 13,  3, 3);
+
+INSERT INTO Projects(id, department_id, name, team_lead_id, team_member_id, Departments_id)
+VALUES (6, 3, 'Телеграм бот', 10,  2, 3);
+
+
+
+INSERT INTO SMM(id, department_id, media_channel,audience_count,org_count,Departments_id)
+VALUES (1, 1, 'Вконтакте', NULL, 2, 1);
+
+INSERT INTO SMM(id, department_id, media_channel,audience_count,org_count,Departments_id)
+VALUES (2, 1, 'Комьюнити', NULL, 2, 1);
+
+
+
+INSERT INTO Rubric(id, name, member_id, media_channel_id, SMM_id)
+VALUES (1, 'Дайджесты, текстики', 9, 1,  1);
+
+INSERT INTO Rubric(id, name, member_id, media_channel_id, SMM_id)
+VALUES (2, 'Лайфаки Питона (четверг)', 8, 2,  1);
