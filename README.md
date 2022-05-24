@@ -150,7 +150,66 @@ REU Data Science Club - сообщество, созданное командо�
 
 ## Docker | Dbeaver
 
-Скачиваем Docker: <a href="[https://www.google.com/](https://www.docker.com/products/docker-desktop/)" target="_blank">Ссылка на скачивание</a>
+Скачиваем Docker: https://www.docker.com/products/docker-desktop/
+
+### Подключаемся к MS SQL Server в Docker-е
+
+```
+# Command to pull MSSQL Docker Image #Образ
+sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+```
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169991024-cb7d3af9-c478-4cf0-a95a-4ceffccc232f.png">
+
+
+```
+# Command to run the container #Контейнер
+docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallyStrongPwd123' -p 1433:1433 mcr.microsoft.com/mssql/server:201
+```
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169991223-aaf4b972-655b-416b-a5b2-973ba3e81aff.png">
+
+
+```
+# Установка sql-cli
+npm install -g sql-cli #ИЛИ 
+sudo npm install -g sql-cli
+
+#Если выдает ошибку нужно установить 
+npm #mac OS with brew:
+brew install the nodeJS
+```
+
+### Azure
+
+Скачиваем Azure: https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169991938-fc516c28-7275-43bc-9cc7-fbf95c6fe9f4.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169991958-b4b0c02e-20ec-497b-bf13-f304fa714ce8.png">
+
+В строке Password  используем пароль, который использовали ранее для поднятия контейнера в Docker: 
+**reallyStrongPwd123**
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169992460-b93d852c-4187-483c-8061-f9d1b2759d6c.png">
+
+Чтобы запустить скрипт нажимаем левой кнопкой мыши на localhost и выбираем New Query. В новом окошке вставляем скрипт, который хотим запустить и нажимаем на Run
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169992629-68e4cf3b-4da1-4b37-8599-6c84f2eba4ed.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169992691-bd5bfd96-755c-4d38-8361-d76f784a1370.png">
+
+### Dbeaver
+
+Скачиваем Dbeaver: https://dbeaver.io/download/
+Открываем приложение
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169993094-ed01746c-edcd-4972-82a3-3be595d001b4.png">
+
+В левом верхнем углу розетка, нажимаем на нее
+В открытом окне выбираем SQL Server и нажимаем Next > <br />
+UserName: sa <br />
+Password: reallyStrongPwd123 <br />
+Готово, поздравляю!  
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169998429-7582c954-f403-420a-a964-98badc93a391.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/76436391/169998451-035dfe21-9a2f-42ed-9229-b57aac20df28.png">
+
 
 Участники проекта:
 * Нина Попова
