@@ -285,28 +285,28 @@ DBeaver - это свободный кроссплатформенный мен�
 
 <details><summary>Список поддерживаемых Dbeaver баз данныхo</summary>
   
-    * MySQL
-    * Oracle
-    * PostgreSQL
-    * Microsoft SQL Server
-    * MongoDB
-    * IBM DB2
-    * Sybase
-    * ODBC
-    * Java DB (Derby)
-    * Firebird (Interbase)
-    * HSQLDB
-    * SQLite
-    * Mimer
-    * H2
-    * IBM Informix
-    * SAP MAX DB
-    * Cache
-    * Ingres
-    * Linter
-    * Teradata
-    * Vertica
-    * Cassandra
+   * MySQL
+   * Oracle
+   * PostgreSQL
+   * Microsoft SQL Server
+   * MongoDB
+   * IBM DB2
+   * Sybase
+   * ODBC
+   * Java DB (Derby)
+   * Firebird (Interbase)
+   * HSQLDB
+   * SQLite
+   * Mimer
+   * H2
+   * IBM Informix
+   * SAP MAX DB
+   * Cache
+   * Ingres
+   * Linter
+   * Teradata
+   * Vertica
+   * Cassandra
 
 </details>
 
