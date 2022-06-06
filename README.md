@@ -1,4 +1,4 @@
-# DATA SCINCE CLUB SQL Database
+# DATA SCIENCE CLUB SQL Database
 
 Целью этого проекта является создание базы данных. Которрая будем отображать в себе:
 * Информацию о членах клуба
